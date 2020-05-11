@@ -1,0 +1,18 @@
+[Tutorial by Cahoots Malone]
+https://www.youtube.com/watch?v=sRhoZcNpMb4
+
+[Build Solution using Visual Studio]
+Build C:\wxWidgets-3.1.3\build\msw\wx_vc16.sln "four" times
+1) Debug x86
+2) Release x86
+3) Debug x64
+4) Release x64
+
+[Windows setup]
+Edit system Variables -> Advanced -> Environment Variables -> New user vairable ->
+WXWIN = "C:\wxWidgets-3.1.3"
+
+[Visual Studio setup]
+View -> Prperty manager -> Add existing property sheet -> Select "C:\wxWidgets-3.1.3\wxwidgets.props"
+Project -> Property -> Advanced -> CharacterSet -> Select "Use Unicode Character set"
+Project -> Property -> Linker -> System -> SubSystem -> Select "Windows (/SUBSYSTEM:WINDOWS)"
